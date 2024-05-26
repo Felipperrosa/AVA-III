@@ -1,0 +1,73 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>IMC Calculadora</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form (submit)="calculateIMC($event)">
+    <div class="form-group">
+      <label for="height">Altura(ex: 1,75cm) </label>
+      <input type="number" id="height" name="height" [(ngModel)]="height" required />
+    </div>
+    <div class="form-group">
+      <label for="weight">Peso (ex: 80kg)</label>
+      <input type="number" id="weight" name="weight" [(ngModel)]="weight" required />
+    </div>
+    
+    <div> 
+      <button type="submit">Calcular <ion-icon name="chevron-forward-outline"></ion-icon></button >
+    </div>
+   
+  </form>
+
+  <div class="imcResult">
+    <h2>Seu IMC é: {{ imcResult.imc }}</h2>
+    <p>{{ imcResult.description }}</p>
+  </div>
+ 
+  <div class="Titulo1">
+    <h1>Veja a interpretação do IMC</h1>
+  </div>
+    
+  <table class="imc-table">
+ 
+    
+    <thead>
+      <tr>
+        <th>IMC</th>
+        <th>Classificação</th>
+        <th>Obesidade(Grau)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Menor que  18.5</td>
+        <td class="text-right">Magreza</td>
+        <td class="text-right">0</td>
+      </tr>
+      <tr>
+        <td> Entre 18.5 e 24.9</td>
+        <td class="text-right">Normal</td>
+        <td class="text-right">0</td>
+      </tr>
+      <tr>
+        <td>Entre 25.0 e 29.9</td>
+        <td class="text-right" >Sobrepeso</td>
+        <td class="text-right">I</td>
+      </tr>
+      <tr>
+        <td>30.0 ou mais</td>
+        <td class="text-right">Obeso</td>
+        <td class="text-right">II</td>
+       
+      </tr>
+      <tr>
+        <td>Maior que 40.0</td>
+        <td class="text-right">Obesidade grave</td>
+        <td class="text-right">III</td>
+       
+      </tr>
+    </tbody>
+  </table>
+</ion-content>

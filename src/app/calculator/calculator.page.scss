@@ -1,0 +1,117 @@
+#content {
+    padding: 20px;
+  }
+  .form-group{
+  display: flex;
+  flex-direction: column;
+  
+  gap: 10px;
+ }
+ .form-group label{
+  color:#2682fa;
+  font-size: 13px;
+  
+ }
+ .form-group input{
+  padding: 10px;
+  width: 120px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  border-width: 1px;
+  border-color: #2682fa;
+
+ }
+ 
+ 
+ 
+ button{
+  border-radius: 15px;
+  width: 120px;
+  margin-top: 21%;
+  padding: 12px;
+  border: #f07109;
+  font-size: 15px;
+  background-color: #f07109;
+ }
+ .button button ion-icon {
+  margin-right: 10px; /* Adiciona um espaço entre o texto e o ícone */
+  font-size: 20px; /* Tamanho do ícone */
+  vertical-align: middle; /* Alinha verticalmente o ícone */
+  margin-bottom: px; /* Move o ícone para cima */
+}
+
+
+  form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+   
+  }
+  
+
+ .imc-result {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    color: #2682fa;
+
+
+    p {
+      margin: 0;
+      line-height: 1.5;
+      
+    }
+
+    .imc-value {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #2682fa;
+     
+    }
+  }
+
+  .Titulo1{
+      background-color: #2682fa;
+      border-radius: 5px;
+      text-align: center;
+      color: #fff;
+      font-weight: lighter;
+      font-size: small;
+      margin-top: 20%;
+      margin-left: 15px;
+      width: 350px;
+  }
+
+  .imc-table {
+    margin-top: 20px;
+   
+
+    thead {
+     
+      th {
+        text-align: left;
+        padding: 10px;
+        background-color: #2682fa;
+        color: #fff;
+       
+      }
+    }
+    
+    tbody {
+      tr {
+        td {
+          padding: 15px;
+          border-bottom: 1px solid #000000;
+          background-color: #72706e62;
+        }
+      }
+     
+    }
+  }
+
+  .text-right{
+      text-align: center;
+    }

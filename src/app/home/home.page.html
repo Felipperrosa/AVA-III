@@ -1,0 +1,38 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Avaliação Formadora II
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Avaliação Formadora I</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-card-content>
+      <ion-img [src]="studentPhoto" alt="Student Photo"></ion-img>
+    </ion-card-content>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>{{ studentName }}</ion-card-title>
+        <ion-card-subtitle>Matricula: {{ studentCode }} </ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        Informações do aluno.
+      </ion-card-content>
+     <br>
+    </ion-card>
+    <ion-button (click)="goToCalculator()">Abrir Calculadora</ion-button>
+
+    <ion-button (click)="goToAddress()">Buscar Cep</ion-button>
+ 
+  </div>
+   
+  
+</ion-content>
